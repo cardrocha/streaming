@@ -1,3 +1,4 @@
+import Button from '../Button'
 import * as S from './styles'
 
 const Header = () => {
@@ -6,8 +7,12 @@ const Header = () => {
       <S.Menu>
         <h1>Streaming</h1>
         <S.ItemLink>
-          <S.Item>Entrar</S.Item>
-          <S.ItemVariant>Assine Agora</S.ItemVariant>
+          <S.ButtonLink type="button" title="clique e logue com sua conta">
+            Entrar
+          </S.ButtonLink>
+          <Button type="button" title="clique e assine">
+            Assine Agora
+          </Button>
         </S.ItemLink>
       </S.Menu>
     </S.Header>

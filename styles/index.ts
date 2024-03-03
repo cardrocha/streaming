@@ -3,7 +3,9 @@ import { createGlobalStyle } from 'styled-components'
 export const colors = {
   black: '#222',
   white: '#fff',
-  blue: '#1B9CFC'
+  blue: '#002be7',
+  blueVariant: '#001c9a',
+  gray: '#415a77'
 }
 
 export const StyledGlobal = createGlobalStyle`
@@ -13,5 +15,9 @@ export const StyledGlobal = createGlobalStyle`
   padding: 0;
   font-family: 'Roboto', sans-serif;
   list-style: none;
+}
+
+body {
+  background-color: ${colors.blueVariant};
 }
 `
