@@ -31,14 +31,14 @@ export const SectionHero = styled.section`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 28px;
   margin-bottom: 16px;
-  margin-top: 40px;
+  padding-top: 80px;
 `
 
 export const Text = styled.p`
   font-size: 40px;
   font-weight: bold;
-  padding-top: 40px;
   color: ${colors.white};
   z-index: 1;
 `
