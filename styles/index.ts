@@ -5,7 +5,9 @@ export const colors = {
   white: '#fff',
   blue: '#002be7',
   blueVariant: '#001c9a',
-  gray: '#415a77'
+  gray: '#415a77',
+  gradientBlue: 'rgba(0, 28, 154, 1)',
+  gradientBlack: 'rgba(0, 0, 0, 1)'
 }
 
 export const StyledGlobal = createGlobalStyle`

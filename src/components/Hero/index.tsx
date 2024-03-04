@@ -11,7 +11,7 @@ const Hero = () => {
           <S.Text>Muito mais filmes e series</S.Text>
         </div>
         <S.TextVariant>
-          Planos a partir de <span>18,90 / mês</span>
+          Planos a partir de <span>R$18,90 / mês</span>
         </S.TextVariant>
       </S.Container>
       <S.ButtonVariant type={'button'} title={'clique e assine'}>
