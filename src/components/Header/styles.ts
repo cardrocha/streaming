@@ -5,7 +5,7 @@ import { ButtonContainer } from '../Button/styles'
 export const Header = styled.header`
   position: fixed;
   padding: 8px 16px;
-  background-color: ${colors.black};
+  background-color: ${colors.blackOpacity};
   color: ${colors.white};
   width: 100%;
   z-index: 1;

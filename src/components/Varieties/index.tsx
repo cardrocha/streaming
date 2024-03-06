@@ -4,11 +4,11 @@ import reality from '../../assets/reality.jpeg'
 import novela from '../../assets/comedia.jpeg'
 import action from '../../assets/action.jpeg'
 import hero from '../../assets/heroi.jpeg'
-import anime from '../../assets/anime.jpg'
+import anime from '../../assets/anime.jpeg'
 
 const Varieties = () => {
   return (
-    <>
+    <section>
       <S.Paragraph>
         Muito mais a ver. Conheça nossa plataforma, opções pra familia toda.
         <br />
@@ -40,7 +40,7 @@ const Varieties = () => {
           <S.TextItem>ANIME</S.TextItem>
         </S.ContanierItem>
       </S.ContainerList>
-    </>
+    </section>
   )
 }
 
