@@ -1,7 +1,7 @@
 import * as S from './styles'
 import child from '../../assets/infantil.jpeg'
 import reality from '../../assets/reality.jpeg'
-import novela from '../../assets/comedia.jpeg'
+import novela from '../../assets/novela.jpeg'
 import action from '../../assets/action.jpeg'
 import hero from '../../assets/heroi.jpeg'
 import anime from '../../assets/anime.jpeg'
@@ -16,23 +16,23 @@ const Varieties = () => {
       </S.Paragraph>
       <S.ContainerList>
         <S.ContanierItem>
-          <img src={child} alt="" />
+          <img src={child} alt="banner familia" />
           <S.TextItem>CRIANÇAS E FAMÍLIA</S.TextItem>
         </S.ContanierItem>
         <S.ContanierItem>
-          <img src={reality} alt="" />
+          <img src={reality} alt="banner reality" />
           <S.TextItem>REALITY</S.TextItem>
         </S.ContanierItem>
         <S.ContanierItem>
-          <img src={novela} alt="" />
+          <img src={novela} alt="banner novela" />
           <S.TextItem>NOVELA</S.TextItem>
         </S.ContanierItem>
         <S.ContanierItem>
-          <img src={action} alt="" />
+          <img src={action} alt="banner filme" />
           <S.TextItem>FILME</S.TextItem>
         </S.ContanierItem>
         <S.ContanierItem>
-          <img src={hero} alt="" />
+          <img src={hero} alt="banner aventura" />
           <S.TextItem>AVENTURA</S.TextItem>
         </S.ContanierItem>
         <S.ContanierItem>

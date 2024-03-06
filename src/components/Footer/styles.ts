@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 1000px;
-  gap: 40px;
+  gap: 10px;
   margin: 0 auto;
   margin-top: 80px;
   padding-left: 40px;
@@ -13,6 +13,13 @@ export const Container = styled.div`
     color: ${colors.white};
     font-size: 14px;
     text-decoration: none;
+    background-color: ${colors.transparent};
+    padding: 10px 16px;
+    border-radius: 10px 10px 10px 10px;
+
+    &:hover {
+      background-color: ${colors.gray};
+    }
   }
 `
 

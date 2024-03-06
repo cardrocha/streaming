@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <S.Container>
-        <a href="#">AGORA MO STREAMING</a>
+        <a href="#">AGORA NO STREAMING</a>
         <a href="#">FILMES</a>
         <a href="#">SÉRIES</a>
         <a href="#">EPISÓDIOS GRÁTIS</a>
