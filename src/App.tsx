@@ -1,4 +1,5 @@
 import { StyledGlobal } from '../styles'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Plans from './components/Plans'
@@ -44,6 +45,7 @@ function App() {
       <Plans />
       <Successes />
       <Questions question={questionsList} />
+      <Footer />
     </div>
   )
 }
