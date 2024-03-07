@@ -19,7 +19,7 @@ Este projeto é uma landing page para um provedor de serviço de streaming fict�
 2. Navegue até o diretório do projeto.
 3. Instale as dependências usando `npm install`.
 4. Inicie o aplicativo com `npm run dev`.
-5. Acesse a aplicação em seu navegador em `http://localhost:3000`.
+5. Acesse a aplicação em seu navegador em `http://localhost:5173/`.
 
 ## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
