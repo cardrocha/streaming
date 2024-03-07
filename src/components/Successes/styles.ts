@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 export const SectionContainer = styled.section`
   margin-top: 60px;
@@ -12,8 +12,18 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 20px 100px;
 
+  @media (max-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    text-align: center;
+    padding: 20px;
+  }
+
   img {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     border-radius: 20px;
     padding: 40px;
   }
@@ -23,6 +33,14 @@ export const Container = styled.div`
       font-size: 28px;
       font-weight: bold;
       color: ${colors.white};
+
+      @media (max-width: ${breakpoints.pc}) {
+        font-size: 20px;
+      }
+
+      @media (max-width: ${breakpoints.desktop}) {
+        font-size: 20px;
+      }
     }
 
     h2 {
@@ -30,6 +48,20 @@ export const Container = styled.div`
       font-weight: 300;
       color: ${colors.white};
       white-space: nowrap;
+
+      @media (max-width: ${breakpoints.pc}) {
+        font-size: 52px;
+        white-space: wrap;
+      }
+
+      @media (max-width: ${breakpoints.desktop}) {
+        font-size: 52px;
+      }
+
+      @media (max-width: ${breakpoints.mobile}) {
+        font-size: 36px;
+        white-space: wrap;
+      }
     }
   }
 `

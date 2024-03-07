@@ -1,14 +1,10 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 import { ButtonContainer } from '../Button/styles'
 
 type TabButtonProps = {
   isActive: boolean
 }
-
-export const SectionPlans = styled.section`
-  position: relative;
-`
 
 export const Title = styled.h2`
   font-size: 36px;
@@ -17,10 +13,13 @@ export const Title = styled.h2`
   margin-top: 120px;
 `
 export const ContainerPlans = styled.div`
-  position: absolute;
-  top: 90px;
-  left: 600px;
-  display: inline-flex;
+  display: flex;
+  max-width: 418px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 16px;
+  align-items: center;
+  justify-content: center;
   background-color: ${colors.gradientGray};
   border: 1px solid ${colors.gradientGray};
   border-radius: 68px 68px 68px 68px;
@@ -35,6 +34,10 @@ export const ButtonPlans = styled(ButtonContainer)<TabButtonProps>`
   border-radius: 68px 68px 68px 68px;
   cursor: pointer;
 
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 4px 12px;
+  }
+
   &:hover {
     background-color: ${(props) =>
       props.isActive ? colors.white : colors.gray};
@@ -47,7 +50,11 @@ export const ContainerCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-top: 100px;
+  margin-top: 40px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+  }
 `
 
 export const CardItem = styled.div`

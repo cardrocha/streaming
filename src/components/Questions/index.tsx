@@ -20,7 +20,7 @@ const Questions = ({ question }: Props) => {
   }
 
   return (
-    <section>
+    <section className="container">
       <S.TitleSection>Perguntas Frequentes</S.TitleSection>
       {question.map((question) => (
         <S.ContainerQuestion key={question.id}>

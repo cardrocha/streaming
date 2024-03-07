@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 import { ButtonContainer } from '../Button/styles'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
-export const SectionHero = styled.section`
-  height: 660px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+export const SectionHero = styled.div`
   position: relative;
+  display: block;
+  width: 100%;
+  height: 660px;
+
+  text-align: center;
   border: 4px solid ${colors.black};
   border-radius: 10% 10% 50% 48% / 0% 0% 31% 34%;
 
@@ -15,6 +16,10 @@ export const SectionHero = styled.section`
   background-position: center;
   background-size: cover;
   z-index: 0;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    border-radius: 0;
+  }
 
   &::after {
     border-radius: 10% 10% 50% 48% / 0% 0% 31% 34%;
@@ -33,6 +38,18 @@ export const SectionHero = styled.section`
     content: '';
     opacity: 0.66;
     z-index: -1;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      border-radius: 0;
+    }
+  }
+
+  .container {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `
 
@@ -58,6 +75,10 @@ export const TextTitle = styled.h1`
   font-weight: bold;
   color: ${colors.white};
   z-index: 1;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 66px;
+  }
 `
 
 export const TextVariant = styled(Text)`
@@ -74,5 +95,6 @@ export const TextVariant = styled(Text)`
 
 export const ButtonVariant = styled(ButtonContainer)`
   padding: 14px 24px;
+  margin-top: 20px;
   z-index: 1;
 `

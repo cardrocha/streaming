@@ -8,7 +8,7 @@ import anime from '../../assets/anime.jpeg'
 
 const Varieties = () => {
   return (
-    <section>
+    <section className="container">
       <S.Paragraph>
         Muito mais a ver. Conheça nossa plataforma, opções pra familia toda.
         <br />

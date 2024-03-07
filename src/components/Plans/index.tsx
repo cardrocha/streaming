@@ -5,7 +5,7 @@ const Plans = () => {
   const [plans, setPlans] = useState(false)
 
   return (
-    <S.SectionPlans>
+    <section className="container">
       <S.Title>ESCOLHA O MELHOR PLANO PARA VOCÊ</S.Title>
       <S.TextDesconty>ECONOMIZE ATÉ 36%</S.TextDesconty>
       <S.ContainerPlans>
@@ -187,7 +187,7 @@ const Plans = () => {
         categorias de conteúdo. Saiba mais em:{' '}
         <a href="#">help.streaming.com/plans</a>
       </S.TextOBS>
-    </S.SectionPlans>
+    </section>
   )
 }
 

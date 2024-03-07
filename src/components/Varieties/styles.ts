@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 export const Paragraph = styled.p`
   font-size: 36px;
@@ -16,11 +16,19 @@ export const ContainerList = styled.ul`
   gap: 2px;
   margin-top: 100px;
   border-bottom: 20px solid ${colors.white};
+
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
 export const ContanierItem = styled.li`
   img {
-    width: 260px;
+    width: 100%;
     height: 600px;
     object-fit: cover;
   }

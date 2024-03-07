@@ -15,6 +15,13 @@ export const colors = {
   transparent: 'transparent'
 }
 
+export const breakpoints = {
+  pc: '1280px',
+  desktop: '1024px',
+  tablet: '768px',
+  mobile: '425px'
+}
+
 export const StyledGlobal = createGlobalStyle`
 * {
   box-sizing: border-box;
@@ -26,5 +33,15 @@ export const StyledGlobal = createGlobalStyle`
 
 body {
   background-color: ${colors.blueVariant};
+
+  .container {
+    max-width: 2560px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: ${breakpoints.desktop}) {
+    max-width: 80%;
+  }
+  }
 }
 `

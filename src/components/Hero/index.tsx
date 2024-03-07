@@ -4,7 +4,7 @@ import hero from '../../assets/hero.png'
 const Hero = () => {
   return (
     <S.SectionHero style={{ backgroundImage: `url(${hero})` }}>
-      <S.Container>
+      <S.Container className="container">
         <S.Text>Chegou!</S.Text>
         <div>
           <S.TextTitle>Streaming</S.TextTitle>

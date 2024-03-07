@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 type TabButtonProps = {
   isActive?: boolean
@@ -44,4 +44,8 @@ export const TextParagraph = styled.p<TabButtonProps>`
   margin: ${(props) => (props.isActive ? '20px 0' : '0')};
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
     margin 0.5s ease-out;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-height: ${(props) => (props.isActive ? '400px' : '0')};
+  }
 `
