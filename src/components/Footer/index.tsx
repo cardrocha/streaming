@@ -22,8 +22,8 @@ const Footer = () => {
         <a href="#">Comunicados Para A Imprensa</a>
       </S.Container>
       <S.TextFooter>
-        ©2024 WarnerMedia Direct Latin America, LLC. Todos os direitos
-        reservados. Max é usado sob licença.
+        ©2024 Entretenimento Infinito, LLC. Todos os direitos reservados.
+        Streaming é usado sob licença.
       </S.TextFooter>
       <S.ContainerSocial>
         <a href="#">

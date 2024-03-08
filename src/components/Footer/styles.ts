@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../../styles'
+import { breakpoints, colors } from '../../../styles'
 
 export const Container = styled.div`
   display: flex;
@@ -20,6 +20,17 @@ export const Container = styled.div`
     &:hover {
       background-color: ${colors.gray};
     }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    justify-content: center;
+    width: 700px;
+    padding-left: 0;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 350px;
+    padding-left: 0;
   }
 `
 
